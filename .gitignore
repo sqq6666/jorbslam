@@ -1,0 +1,36 @@
+# Build artifacts
+build/
+**/CMakeFiles/
+**/cmake_install.cmake
+**/CMakeCache.txt
+**/Makefile
+lib/libORB_SLAM2.so
+
+# Compiled examples
+Examples/Monocular/mono_tum
+Examples/Monocular/mono_euroc
+Examples/Monocular/mono_kitti
+Examples/Stereo/stereo_euroc
+Examples/Stereo/stereo_kitti
+Examples/RGB-D/rgbd_tum
+Examples/ROS/ORB_SLAM2/build/
+Examples/ROS/ORB_SLAM2/**/Mono*
+Examples/ROS/ORB_SLAM2/**/Stereo*
+Examples/ROS/ORB_SLAM2/**/RGBD*
+
+# Large vocabulary (extract locally: tar -xf Vocabulary/ORBvoc.txt.tar.gz)
+Vocabulary/ORBvoc.txt
+Vocabulary/ORBvoc.bin
+
+# Backups / local edits
+*.bak*
+*.log
+compat_opencv/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
